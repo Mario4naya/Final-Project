@@ -1,0 +1,77 @@
+<div class="container">
+
+    <div>
+        <form [formGroup]="nuevoForm" (ngSubmit)="newPerson(nuevoForm.value)">
+
+            <div class="form-row">
+                <div class="col">
+                  <label for="input1">Nombre</label>
+                  <input type="text" class="form-control"  formControlName="name" placeholder="First name">
+                </div>
+                <div class="col">
+                  <label for="input12">Apellido</label>
+                  <input type="text" class="form-control"  formControlName="lastName" placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col">
+                  <label for="iinput3">Documento</label>
+                  <input type="text" class="form-control"  formControlName="document" placeholder="Documento">
+                </div>
+                <div class="col">
+                  <label for="input34">Telefono</label>
+                  <input type="text" class="form-control" formControlName="phone" placeholder="phone">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="input35">Email</label>
+                  <input type="email" class="form-control"  formControlName="email" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="iinput356">Password</label>
+                  <input type="password" class="form-control"  formControlName="password" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="input3674">user</label>
+                  <input type="email" class="form-control"  formControlName="user" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="input38">date</label>
+                  <input type="date" id="bday" name="bday" class="form-control" formControlName="birthDate" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                </div>
+              </div>
+
+              <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputState">Tipo de documento</label>
+                <select id="inputState" formControlName="documentType" class="form-control">
+                  <option selected>Choose...</option> 
+                  <option *ngFor="let td of tipos" [value]="td.id">
+                    {{td.name}}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputState">Ciudad</label>
+                <select id="inputState" formControlName="city" class="form-control">
+                  <option selected>Choose...</option>
+                  <option *ngFor="let cit of cities" [value]="cit.id">
+                    {{cit.name}}
+                  </option>
+                </select>
+              </div>
+              </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" (click)="goBack()" class="btn btn-info">goback</button>
+          </form>
+
+    </div>
+
+</div>

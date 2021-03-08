@@ -1,0 +1,45 @@
+<div class="container">
+
+    <button type="button" class="btn btn-info" (click)="nuevaPersona()" >Nuevo Documento</button>
+    
+      <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Documento</th>
+            <th>Phone</th>
+            <th>User</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Tipo de Documento</th>
+            <th>Ciudad</th>
+            <th>Opciones</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let p of personas">
+            <td scope="row">{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.lastName}}</td>
+            <td>{{p.document}}</td>
+            <td>{{p.phone}}</td>
+            <td>{{p.user}}</td>
+            <td>{{p.password}}</td>
+            <td>{{p.email}}</td>
+            <td>{{p.birthDate}}</td>
+            <td>{{p.documentType.name}}</td>
+            <td>{{p.city.name}}</td>
+            <td>
+              <button type="button" class="btn btn-warning" (click)="editarPersona(p.id)"  >Editar</button>
+              <button type="button" class="btn btn-danger" (click)="eliminarPersona(p.id)" >Eliminar</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      
+        <button type="button" class="btn btn-info">Info</button>
+  </div>
+  

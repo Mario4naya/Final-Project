@@ -57,8 +57,13 @@ public class PersonaService {
             return person.save(existingPerson);
         }
     }
-    public void deletePerson(int id){
-        person.findById(id).ifPresent(persona -> person.delete(persona));
+    public boolean deletePerson(int id){
+        Persona persona = person.findById(id).orElse(null);
+        if (persona != null){
+            person.delete(persona);
+            return true;
+        }
+        return false;
     }
 
 

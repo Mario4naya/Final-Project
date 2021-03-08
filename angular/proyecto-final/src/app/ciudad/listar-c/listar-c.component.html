@@ -1,0 +1,28 @@
+<div class="container">
+
+  <button type="button" class="btn btn-info" (click)="nuevaCiudad()" >nueva ciudad</button>
+  
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col"></th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th> .</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let cit of cities">
+          <td scope="row">{{cit.id}}</td>
+          <td>{{cit.name}}</td>
+          <td>{{cit.description}}</td>
+          <td>
+            <button type="button" class="btn btn-warning" (click)="editarCiudad(cit.id)" >Editar</button>
+            <button type="button" class="btn btn-danger" (click)="eliminarCiudad(cit.id)" >Eliminar</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    
+      <button type="button" class="btn btn-info">Info</button>
+</div>

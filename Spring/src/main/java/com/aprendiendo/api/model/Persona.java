@@ -1,7 +1,5 @@
 package com.aprendiendo.api.model;
-
 import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -29,7 +27,7 @@ public class Persona {
     private String email;
 
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date birthDate;
 
     @ManyToOne
