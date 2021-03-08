@@ -1,7 +1,19 @@
-<p>nav bar</p>
-<a href="/listarCiudades" class="btn btn-primary">Ciudades</a>
-<a href="/listarDocumentos" class="btn btn-secondary">Documentos</a>
-<a href="/listarPersonas" class="btn btn-dark">Personas</a>
-<router-outlet></router-outlet>
-<p>Footer</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/principal">CRUD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/principal">Principal</a>
+        <a class="nav-item nav-link" href="/listarCiudades">Ciudades</a>
+        <a class="nav-item nav-link" href="/listarDocumentos">Documentos</a>
+        <a class="nav-item nav-link" href="/listarPersonas">Personas</a>
+      </div>
+    </div>
+  </nav>
+<div class="main">
+    <router-outlet></router-outlet> 
+</div>
+
    

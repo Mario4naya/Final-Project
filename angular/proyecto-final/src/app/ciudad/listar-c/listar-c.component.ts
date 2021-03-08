@@ -42,8 +42,4 @@ export class ListarCComponent implements OnInit {
       }
     });
   }
-
-
-
-
 }

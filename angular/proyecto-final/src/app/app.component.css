@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 56px;
+    background: rgba(0, 0, 0, 0) linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207));
+    background-size: 400% 400%;
+    animation: background-ani 30s ease infinite;
+}
+
+@-webkit-keyframes background-ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes background-ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes background-ani {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 2;
+}
+
+.name {
+    min-width: 30%;
+}
+
+.description {
+    min-width: 30vw;
+}
+
