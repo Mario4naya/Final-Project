@@ -1,0 +1,19 @@
+form {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+form h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

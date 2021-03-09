@@ -3,10 +3,13 @@ form {
     padding: 10px;
     border-radius: 5px;
     padding: 20px;
+    
 }
 
 form h4 {
     text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
 }
 
 .btn-group {

@@ -1,22 +1,24 @@
-<div class="container">    
+<div class="container">  
+  <div class="row">
+    <div class="col-md-12">
       <table class="table table-borderless table-primary">
-          <thead>
+        <thead class="thead-dark">
           <tr>
             <th scope="col">id</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Documento</th>
-            <th>Phone</th>
-            <th>User</th>
-            <th>Password</th>
-            <th>Email</th>
-            <th>Date</th>
-            <th>Tipo de Documento</th>
-            <th>Ciudad</th>
-            <th>Opciones</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Phone</th>
+            <th scope="col">User</th>
+            <th scope="col">Password</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date</th>
+            <th scope="col">Tipo de Documento</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Opciones</th>
           </tr>
-          </thead>
-          <tbody>
+        </thead>
+        <tbody>
           <tr *ngFor="let p of personas">
             <td scope="row">{{p.id}}</td>
             <td>{{p.name}}</td>
@@ -36,12 +38,14 @@
               </div>
             </td>
           </tr>
-          </tbody>
-        </table>
-        <div class="row">
-          <div class="col s12">
-            <button type="button" class="btn btn-dark col s12" (click)="nuevaPersona()" >Nueva persona</button>
-          </div>
-        </div>
+        </tbody>
+      </table>
+    </div>
+  </div>   
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-dark col s12" (click)="nuevaPersona()" >Nueva persona</button>
+    </div>
   </div>
+</div>
   

@@ -1,0 +1,28 @@
+.contenido {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Noto Sans KR';
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 20px;
+}
+
+p {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    color: #000;
+    font-family: 'Lato';
+    font-weight: 700;
+}

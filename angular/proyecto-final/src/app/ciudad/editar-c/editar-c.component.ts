@@ -48,7 +48,7 @@ export class EditarCComponent implements OnInit {
     });
   }
 
-  getBack(){
+  goBack(){
     this.router.navigate(['listarCiudades']);
   }
 
